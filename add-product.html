@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add New Product</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Slab&family=Sora:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-product.css">
+    <link rel="stylesheet" href="css/product.css">
+
+   
+    <script src="https://kit.fontawesome.com/3db0669908.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="navigation">
+            <a  class="logo" href="#">
+                <span class="icon1"><i class="fa-brands fa-atlassian"></i></span>
+                    <span class="title1"><h2>Brand Name </h2></span>
+                    <span class="close"><i class='bx bx-x'></i></span>
+                    
+                    
+               </a>
+               
+               <ul>
+                <li>
+                  <a href="index.html">
+                    <span class="icon"><i class='fa fa-home'></span></i></span>
+                    <span class="title">Dashboard</span>
+                     </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                      <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                      <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                  <a href="customers.html">
+                    <span class="icon"><i class="fa-solid fa-users"></i></span>
+                    <span class="title">Customers</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="title-drop" href="#">
+                    <span class="icon"><i class="fa-regular fa-file"></i></span>
+                    <span class="title">Orders</span>
+                    <i class='bx bx-chevron-right first'></i>
+                      <ul class="nav-drop">
+                        <li><a href="neworder.html"> New Orders</a></li>
+                        <li><a href="orderHistory.html"> Order History</a></li>
+                      </ul>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class='bx bx-cog'></i></span>
+                    <span class="title">Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class='bx bx-log-out'></i></span>
+                    <span class="title">Password</span>
+                  </a>
+                </li>
+            </ul>
+            
+        </div>
+    
+    <div class="main container-main">
+        <div class="topnav">
+            
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+                
+              
+            
+            </div>
+            
+            <div class="user">
+                <div class="notifications d-none">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="circle">2</div>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                           <a href="#">
+                             <div class="content border">
+                                <p>New orders received <span> - 3m Ago</span></p>
+                                <small>order #102 has been placed</small>
+                             </div>
+                           </a>
+
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">
+                              <div class="content">
+                                 <p>New orders received <span> - 2m Ago</span></p>
+                                 <small>order #103 has been placed</small>
+                              </div>
+                            </a>
+ 
+                         </div>
+                         <div class="dropdown-content">
+                            <a href="#">
+                              <p class="all-notifications">
+                                  See all notifications
+                              </p>
+                            </a>
+ 
+                         </div>
+                        
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/istockphoto-1317784594-612x612.jpg">
+                </div>
+                <div class="name">
+                    <h4>Jane Doe</h4>
+                    <small>Super Admin</small>
+
+                </div>
+            </div>
+        </div>
+        <div class="product-header">
+            <div class="product-head">
+                <h3>Product</h3>
+                <h5><a href="#">Home</a><span>/</span></i><span>Add Product</span></h5>
+            </div>
+            <button class="add"><a href="product.html"> View All</a></button>
+         </div>
+         <div class="add-product">
+            <div class="add-product-title">
+                <h4>Add Product</h4>
+            </div>
+           <div class="two-cols">
+            <div class="wrapper-contain" style="display: flex; flex-direction: column; position: relative;">
+                
+               <div class="wrapper">
+                <form method="post" enctype="multipart/form-data" id="mainform">
+                   
+                    <div class="file-upload">
+                        <i class='bx bx-pencil'></i>
+                     <input type="file" name="img1" id="img1" style="opacity: 0;">
+                    </div>
+                             
+                            
+                     </form>
+                <img style="width: 100%; height: 100%; object-fit: cover; display: none;" id="preview-img1" />
+                <span class="image-preview__default-text" id="imgText">Image preview</span>
+
+               
+               </div>
+              
+            <div class="small-pics">
+                
+                   
+                       
+                   <div class="small-wrapper">
+                    <form method="post" enctype="multipart/form-data" id="mainform"> 
+
+                        <div class="file-upload1">
+                            <i class='bx bx-pencil'></i>
+                         <input type="file" name="img2" id="img2" style="opacity: 0;">
+                        </div>
+                </form>
+                <img style="width: 100%; height: 100%; object-fit: cover; display: none;" id="preview-img2" />
+
+                   </div>
+                    
+                    <div class="small-wrapper">
+                        <form method="post" enctype="multipart/form-data" id="mainform"> 
+                            <div class="file-upload1">
+                                <i class='bx bx-pencil'></i>
+                             <input type="file" name="img3" id="img3" style="opacity: 0;">
+                            </div>
+                </form>
+                <img style="width: 100%; height: 100%; object-fit: cover; display: none;" id="preview-img3" />
+
+                    </div> 
+                      
+                    <div class="small-wrapper">
+                        <form method="post" enctype="multipart/form-data" id="mainform"> 
+                            <div class="file-upload1">
+                                <i class='bx bx-pencil'></i>
+                             <input type="file" name="img4" id="img4" style="opacity: 0;">
+                            </div>
+                </form>
+                <img style="width: 100%; height: 100%; object-fit: cover; display: none;" id="preview-img4" />
+                    </div>       
+                   
+                    <div class="small-wrapper">
+                        <form method="post" enctype="multipart/form-data" id="mainform"> 
+                            <div class="file-upload1">
+                                <i class='bx bx-pencil'></i>
+                             <input type="file" name="img5" id="img5" style="opacity: 0;">
+                            </div>
+                </form>
+                <img style="width: 100%; height: 100%; object-fit: cover; display: none;" id="preview-img5" />
+                    </div> 
+                   
+            </div>
+            </div>
+           
+            <div class="wrapper2" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="first-label">
+                        <div class="label1" style="display: flex; flex-direction: column;">
+                            <label for="product" style=" margin-bottom: .5rem;"><h5>Product Name</h5></label>
+                            <input type="text" name="text" id="text">
+                        </div>
+                        
+                      </div>
+                      <div class="first-label">
+                        <div class="label3"style="display: flex; flex-direction: column;" >
+                            <label for="description"><h5 style="margin-bottom: .6rem">Short Description</h5></label>
+                            <textarea class="form-control" rows="3"></textarea>
+                          </div>
+                      </div>
+                      <div class="first-label">
+                        <div class="labels" style="display: flex; width: 100%; justify-content: space-between;">
+                           
+                            <div class="label1" style="display: flex; flex-direction: column;">
+                                <label for="product" style="margin-left: .6rem; margin-bottom: .5rem;"><h5>Category</h5></label>
+                                <select>
+                                    <option>Crops</option>
+                                    <option>Perishables</option>
+                                    <option>Fruits and veggies</option>
+                                    <option>Grains</option>
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="first-label">
+                        <div class="labels" style="display: flex; width: 100%; justify-content: space-between;">
+                                <div class="label1" style="display: flex; flex-direction: column;">
+                                    <label for="product" style="margin-left: .6rem; margin-bottom: .5rem;"><h5>Price</h5></label>
+                                    <input type="number" name="num" id="num">
+                                </div>
+                                <div class="label1" style="display: flex; flex-direction: column;">
+                                    <label for="product" style="margin-left: .6rem; margin-bottom: .5rem;"><h5>Offer?</h5></label>
+                                    <select>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                       
+                                    </select>
+                                </div>
+                        </div>
+                      </div>
+                      <div class="first-label">
+                        <div class="labels" style="display: flex; width: 100%; justify-content: space-between;">
+                            <div class="label1" style="display: flex; flex-direction: column;">
+                                <label for="product"><h5 style="margin-left: .6rem; margin-bottom: .5rem;">On sales?</h5></label>
+                                <select>
+                                    <option>yes</option>
+                                    <option>No</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="label1" style="display: flex; flex-direction: column;">
+                                <label for="product"><h5 style="margin-left: .6rem; margin-bottom: .5rem;">Discount</h5></label>
+                                <select>
+                                    <option>yes</option>
+                                    <option>No</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="first-label">
+                        <div class="label4" style="display: flex; flex-direction: column;">
+                            <label for="product" style=" margin-bottom: .5rem;"><h5>Discount in percent of 1 to 100</h5></label>
+                            <input type="number" name="numb" id="numb">
+                        </div>
+                        
+                      </div>
+                <a href="#" class="submit-btn">Submit</a>
+                </div>
+            </div>
+           
+           </div>
+          
+         </div>
+
+    </div>
+   </div>
+   <script src="index.js"></script>
+   <script src="dropdown.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+       function readURL(input) {
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          imgId = '#preview-'+$(input).attr('id');
+          $(imgId).attr('src', e.target.result);
+          $(imgId).css('display', 'block');
+          $(imgText).css('display', 'none');
+      }
+
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+
+
+$("form#mainform input[type='file']").change(function(){
+  readURL(this);
+});
+   </script>
+</body>
+</html>

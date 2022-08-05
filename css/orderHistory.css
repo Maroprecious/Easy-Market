@@ -1,0 +1,10 @@
+.ready{
+    color: goldenrod;
+    width: 6rem;
+    font-size: .2rem;
+    background-color: rgb(248, 240, 197);
+    padding: .3rem .8rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}

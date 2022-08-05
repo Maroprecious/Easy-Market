@@ -1,0 +1,151 @@
+body{
+    background: rgb(252, 250, 250);
+}
+.add{
+    background-color: rgb(85, 219, 85);
+    border: none;
+    font-size: .89rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: .3rem;
+    padding: .8rem 1.1rem;
+    margin-right: 3rem;
+}
+.add a{
+    color: #fff;
+    text-decoration: none;
+}
+.product-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-head{
+   padding: 1.5rem;
+   color: #000;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+
+}
+.product-head h3{
+    letter-spacing: .3px;
+    margin-bottom: .5rem;
+    font-weight: 100;
+   color: #000;
+}
+.product-head h5{
+   color: #000;
+   font-weight: 300;
+}
+.product-head h5 span{
+    margin-left: .4rem;
+    color: #000;
+}
+
+.product-head a:not(:first-child){
+    margin-left: .4rem;
+}
+.product-head a{
+    color: rgb(106, 218, 106);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.product-container{
+   width: auto;
+   height: auto;
+   background-color: #fff;
+   border-radius: .4rem;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 2rem 2rem;
+
+}
+.product-container table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+select{
+    width: 10%;
+    margin-left: .6rem;
+    font-size: .8rem;
+}
+.contain p{
+    margin-left: .6rem;
+    font-size: .8rem;
+}
+.contain{
+    padding: 1.2rem .3rem;
+}
+.product-container th{
+    background-color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid rgb(238, 235, 235);
+}
+.product-container td img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.product-container td{
+    padding: .7rem ;
+}
+.product-container table{
+    padding: 0 2rem;
+}
+.product-container td p{
+    font-size: .8rem;
+}
+.drop-menu{
+    background: #fff;
+    z-index: 2;
+    text-align: left;
+    position: absolute;
+    right: 8.7%;
+    border: 1px solid rgb(182, 180, 180);
+    display: none;
+    width: 12rem;
+    height: 8.5rem;
+}
+.drop-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.drop-menu ul li{
+    list-style: none;
+    margin-bottom: .8rem;
+    width: 100%;
+    display: block;
+    padding: .4rem 0;  
+}
+.drop-menu ul li a{
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+    font-weight: 200;
+    font-size: .8rem;
+    width: 100%;
+    margin-left: 1rem;
+
+}
+.drop-menu ul li:hover{
+    background: rgb(238, 243, 238);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+    
+    .product-container{
+        overflow-x: scroll;
+    }
+
+}
+

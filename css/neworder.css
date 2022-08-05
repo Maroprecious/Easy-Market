@@ -1,0 +1,23 @@
+table td .pendings{
+    width: 4rem;
+    font-size: .6rem;
+    background-color: rgb(248, 223, 230);
+    color: rgb(245, 125, 161);
+    padding: .3rem .5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+table td .delivered{
+    font-size: .7rem;
+}
+table td .ready{
+    color: rgb(235, 171, 12);
+    width: 5.5rem;
+    font-size: .6rem;
+    background-color: rgb(248, 240, 197);
+    padding: .3rem .5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+}

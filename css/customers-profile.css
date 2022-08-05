@@ -1,0 +1,217 @@
+.custom{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+
+}
+.custom-1{
+  background-color: #fff;
+  height: 24rem;
+  border-radius: .3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cust-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+.custom-1 .customer-imgs{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-top: .6rem;
+}
+.customer-imgs img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.customer-name{
+  margin-top: .5rem;
+  text-align: center;
+}
+.customer-name h3{
+  font-size: 1.1rem;
+}
+.cust-user p{
+  font-size: .8rem;
+  margin-top: .2rem;
+}
+.cust-btn{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.cust-btn .call{
+  text-decoration: none;
+  margin-right: .4rem;
+    background: rgb(100, 100, 201);
+  padding: .4rem 1rem;
+  color: #fff;
+  border-radius: .3rem;
+}
+.cust-btn .message{
+  text-decoration: none;
+  margin-right: .4rem;
+  background: #fff;
+  padding: .4rem 1rem;
+  color: rgb(100, 100, 201);
+  border: 1px solid rgb(100, 100, 201);
+  border-radius: .3rem;
+}
+.custom-2 {
+  background-color: #fff;
+  border-radius: .3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  width: auto;
+
+}
+.tab_wrap{
+  height: 20.1rem;
+
+}
+.custom2-info{
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+
+}
+
+.custom2-info li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.custom2-info li:not(:first-child){
+  margin-top: 1.2rem;
+}
+.cust-tab{
+  display: flex;
+  flex-direction: column;
+}
+.custom2-info li p{
+  position: absolute;
+  left: 50%;
+}
+.bob{
+  position: relative;
+  border-bottom: 1px solid rgb(233, 230, 230);
+  width: 40rem;
+  margin-top: 1rem;
+}
+.board{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background: #fff;
+  height: 6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: .5rem;
+}
+.board .board-name{
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tabs ul{
+  display: flex;
+  background: #fbfbfb;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.tabs ul li{
+  width: 50%;
+  padding: 15px;
+  border-right: 1px solid #dddddd;
+  text-align: center;
+  transition: all 0.2s ease;
+  position: relative;
+  list-style: none;
+}
+.tabs ul li:last-child{
+  border-right: 0px;
+}
+.tabs ul li::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #028f68;
+  opacity: 0;
+}
+.tabs ul li:hover,
+.tabs ul li.active{
+  color: #028f68;
+  cursor: pointer;
+}
+.tabs ul li:hover::before,
+.tabs ul li.active::before{
+  opacity: 1;
+}
+.tab_content table td img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.tab_content td p{
+  font-size: .8rem;
+}
+.tab_content table{
+  height: auto;
+}
+.tab_content{
+  width: 100%;
+  
+}
+.tab_content table tr th{
+  background-color: #fff;
+  border-top: 0;
+}
+.tab2{
+  width: auto;
+  margin: 5% 5%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: 1px solid rgb(238, 235, 235);
+}
+
+
+
+
+@media only screen and (max-width:1270px){
+  .custom2-info{
+    overflow-x: scroll;
+    position: relative;
+  }
+  .custom2-info li p{
+    left: 40%;
+  }
+}
+@media only screen and (max-width:840px){
+  .custom-1 .customer-imgs{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: .6rem;
+  }
+  .custom{
+    grid-template-columns: 1fr;
+  }
+  .custom-1{
+    height: 20rem;
+  }
+}

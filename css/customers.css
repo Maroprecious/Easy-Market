@@ -1,0 +1,9 @@
+.total p a{
+   font-size: .75rem;
+}
+td p a{
+    font-size: .75rem;
+}
+td h6{
+    color: rgb(25, 25, 250);
+}

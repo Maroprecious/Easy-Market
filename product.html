@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Slab&family=Sora:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+
+    	<!-- Core JS files -->
+
+   
+    <script src="https://kit.fontawesome.com/3db0669908.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="section">
+    <div class="navigation">
+        <a  class="logo" href="#">
+            <span class="icon1"><i class="fa-brands fa-atlassian"></i></span>
+                <span class="title1"><h2>Brand Name </h2></span>
+                <span class="close"><i class='bx bx-x'></i></span>
+                
+                
+           </a>
+           
+           <ul>
+            <li>
+              <a href="index.html">
+                <span class="icon"><i class='fa fa-home'></span></i></span>
+                <span class="title">Dashboard</span>
+                 </a>
+            </li>
+            <li>
+                <a href="product.html">
+                  <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span class="title">Products</span>
+                </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <span class="icon"><i class="fa-solid fa-users"></i></span>
+                <span class="title">Customers</span>
+              </a>
+            </li>
+            <li>
+              <a class="title-drop" href="#">
+                <span class="icon"><i class="fa-regular fa-file"></i></span>
+                <span class="title">Orders</span>
+                <i class='bx bx-chevron-right first'></i>
+                  <ul class="nav-drop">
+                    <li><a href="neworder.html"> New Orders</a></li>
+                    <li><a href="orderHistory.html"> Order History</a></li>
+                  </ul>
+              </a>
+            </li>
+            <li>
+              <a href="homepage.html">
+                <span class="icon"><i class='bx bxs-store'></i></i></span>
+                <span class="title">Store Front</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"><i class='bx bx-cog'></i></span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"><i class='bx bx-log-out'></i></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div class="main container-main">
+        <div class="topnav">
+            
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+                
+              
+            
+            </div>
+            
+            <div class="user">
+                <div class="notifications d-none">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="circle">2</div>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                           <a href="#">
+                             <div class="content border">
+                                <p>New orders received <span> - 3m Ago</span></p>
+                                <small>order #102 has been placed</small>
+                             </div>
+                           </a>
+
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">
+                              <div class="content">
+                                 <p>New orders received <span> - 2m Ago</span></p>
+                                 <small>order #103 has been placed</small>
+                              </div>
+                            </a>
+ 
+                         </div>
+                         <div class="dropdown-content">
+                            <a href="#">
+                              <p class="all-notifications">
+                                  See all notifications
+                              </p>
+                            </a>
+ 
+                         </div>
+                        
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/istockphoto-1317784594-612x612.jpg">
+                </div>
+                <div class="name">
+                    <h4>Jane Doe</h4>
+                    <small>Super Admin</small>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-header">
+           <div class="product-head">
+               <h3>Product</h3>
+               <h5><a href="#">Home</a><span>/</span></i><span>Product</span></h5>
+           </div>
+           <button class="add"><a href="add-product.html"> Add Products</a></button>
+        </div>
+        <div class="product-container">
+            <div class="contain" style="display: flex; align-items: center;">
+                <p>Show</p>
+            <select>
+                <option>20</option>
+                <option>40</option>
+                <option>60</option>
+                <option>80</option>
+                <option>All</option>
+            </select>
+            <p>Entries</p>
+
+            </div>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Offer</th>
+                    <th>Purchased</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                  </tr>
+                  <tr>
+                    <td><img src="images/YamsatBrixtonMarket.jpg"></td>
+                    <td>
+                      <p>Yam Tubers</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>20,000</p></div>
+                    </td>
+                    <td>
+                      <p>10% OFF</p>
+                    </td>
+                    <td>
+                        <p>5 Baskets</p>
+                      </td>
+                      <td>
+                        <p>15 Baskets</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars" style="cursor: pointer;" id="bar"></i>
+                        <div class="drop-menu" id="dropdown-menu">
+                          <ul>
+                            <li><a href="#"><i class="fa-solid fa-eye" style="margin-right: .3rem"></i> View Full Data</a></li>
+                            <li><a href="#"><i class="fa-solid fa-file" style="margin-right: .3rem"></i> Edit Data</a></li>
+                            <li><a href="#" id="deleted"><i class="fa-solid fa-trash" style="margin-right: .3rem; color: red;"></i> Delete Data</a></li>
+                            
+                          </ul>
+                        </div>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/basket-gb0ee138ad_1920.jpg"></td>
+                    <td>
+                      <p>Basket of tomatoes</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>12,000</p></div>
+                    </td>
+                    <td>
+                      <p>30% OFF</p>
+                    </td>
+                    <td>
+                        <p>10 Baskets</p>
+                      </td>
+                      <td>
+                        <p>11 Baskets</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/onions.jpg"></td>
+                    <td>
+                      <p>Onion basket</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>20,000</p></div>
+                    </td>
+                    <td>
+                      <p>-</p>
+                    </td>
+                    <td>
+                        <p>8 Baskets</p>
+                      </td>
+                      <td>
+                        <p>2 Baskets</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/93797237_MTEyNS0xNTAwLTU0NmExODU2NTc.webp"></td>
+                    <td>
+                      <p>Bucket of Crayfish</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>5,300</p></div>
+                    </td>
+                    <td>
+                      <p>2% OFF</p>
+                    </td>
+                    <td>
+                        <p>20 Buckets</p>
+                      </td>
+                      <td>
+                        <p>5 Buckets</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/87281645_MTUwMC0xMTI1LWYyOGM0NTNhNTk.webp"></td>
+                    <td>
+                      <p>Processed Beans</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>2,000</p></div>
+                    </td>
+                    <td>
+                      <p>10% OFF</p>
+                    </td>
+                    <td>
+                        <p>5 Bags</p>
+                      </td>
+                      <td>
+                        <p>7 Bags</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/85835336_MTEyNS0xNTAwLWRkYmQxMjVkOGY.webp"></td>
+                    <td>
+                      <p>Plantain bunch</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>1,000</p></div>
+                    </td>
+                    <td>
+                      <p>-</p>
+                    </td>
+                    <td>
+                        <p>2 Bunches</p>
+                      </td>
+                      <td>
+                        <p>1 Bunch</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/eric-prouzet-JavDf01nH24-unsplash.jpg"></td>
+                    <td>
+                      <p>Bucket of Pepper</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>7,000</p></div>
+                    </td>
+                    <td>
+                      <p>3% OFF</p>
+                    </td>
+                    <td>
+                        <p>9 Buckets</p>
+                      </td>
+                      <td>
+                        <p>15 Buckets</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><img src="images/74374568_NzA4LTcwOC05MTNmZTBiMzkyLTI.webp"></td>
+                    <td>
+                      <p>Bag of Rice</p>
+                    </td>
+                    <td>
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>40,000</p></div>
+                    </td>
+                    <td>
+                      <p>5% OFF</p>
+                    </td>
+                    <td>
+                        <p>100 Bags</p>
+                      </td>
+                      <td>
+                        <p>54 Bags</p>
+                      </td>
+                      <td>
+                        <p>ACTIVE</p>
+                      </td>
+                      <td>
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td style="border: none; border-bottom: none;"><img src="images/YamsatBrixtonMarket.jpg"></td>
+                    <td style="border: none; border-bottom: none;">
+                      <p>Yam Tubers</p>
+                    </td>
+                    <td style="border: none; border-bottom: none;">
+                      <div class="total"><i class="fa-solid fa-naira-sign"></i><p>20,000</p></div>
+                    </td>
+                    <td style="border: none; border-bottom: none;">
+                      <p>10% OFF</p>
+                    </td>
+                    <td style="border: none; border-bottom: none;">
+                        <p>5 Baskets</p>
+                      </td>
+                      <td style="border: none; border-bottom: none;">
+                        <p>15 Baskets</p>
+                      </td>
+                      <td style="border: none; border-bottom: none;">
+                        <p>ACTIVE</p>
+                      </td>
+                      <td style="border: none; border-bottom: none;">
+                        <p>2022-05-13</p>
+                      </td>
+                      <td style="text-align: center; border-bottom: none;">
+                        <i class="fa-solid fa-bars"></i>
+                      </td>
+                  </tr>
+            </table>
+            <div class="table-footer">
+              <p>Showing 1 to 10 of 50 entries</p>
+              <div class="footer-icons">
+                <i class="fa-solid fa-angle-left"></i>
+                <ul>
+                <li class="active2">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+        </div>
+        </div>
+   </div>
+
+
+
+
+   <script src="index.js"></script>
+   <script src="product.js"></script>
+   <script src="dropdown.js"></script>
+
+</body>
+</html>
+  
+ 
+
+
+  
+ 
+ 
+ 
+  
